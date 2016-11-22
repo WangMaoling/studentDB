@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body ng-app="myApp" style="background: url(img/bg_body.gif)">
+    <div ng-view=""></div>
+    <script src="lib/angular.js"></script>
+    <script src="lib/angular-route.js"></script>
+    <script src="lib/angular-resource.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/manRouteModule.js"></script>
+    <script src="js/homePageCtrlModule.js"></script>
+    <script src="js/manConfigModule.js"></script>
+    <script src="js/manDataModule.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/manEditDataModule.js"></script>
+    <script src="js/addCtrlModule.js"></script>
+    <script>
+        $(".prev").click(function(){
+            start-=10;
+            if(start<0){
+                start=0;
+                alert("已经是第一页了!");
+                return false;
+            }
+        })
+    </script>
+</body>
+</html>
